@@ -1,0 +1,99 @@
+.navbar{
+    max-width: 75rem;
+    height: 4rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    /* padding-top: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: rgb(30,30,30);
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+}
+.desktop-menu-list-items{
+    margin: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.desktop-menu-list-items:hover{
+    color: yellow;
+    /* padding-bottom: 0.5rem;
+    border-bottom: 2px solid yellow; */
+}
+
+.nav-btn{
+    background: rgb(239, 239, 239);
+    border: none;
+    color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.85rem 1.5rem ;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    column-gap: 0.5rem;
+}
+.nav-btn i{
+    padding-right: 0.5rem;
+}
+
+.nav-btn:hover{
+    background: rgb(212, 212, 212);
+}
+
+.active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid yellow;
+}
+
+.mobMenu{
+    width: 2rem;
+    display: none;
+}
+
+.nav-menu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+}
+
+.menu-list-items{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+    
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
+    }
+    .nav-menu{
+        display: flex;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+}
+
